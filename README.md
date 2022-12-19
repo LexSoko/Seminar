@@ -26,7 +26,12 @@ About drinkin' straight out the eight bottle\
 Do I look like a muthafuckin' role model?\
 To a kid lookin' up to me\
 Life ain't nothin' but bitches and money `--Ice Cube`
-
+***
+**Stay woke**\
+Ey, Greta und der Klimaschutz (was?),\
+ real Rap ich gib 'nen Fick auf Unser Klima, plus \
+Ich gib 'nen Fick auf den Amazonas Regenwald\
+Ich bin beschäftigt mit anderen Problemen halt (yeah) `-- Money Boy`
 
 
 # Git Basic Use #
@@ -49,7 +54,7 @@ the commit should be described
 > git commit -m"arbituary message that describes the change"
 
 ```
-After staging changes that may be present on the server should be pulled to avoid pushing changed files with merge conflicts on the main branch
+After staging, changes that may be present on the server should be pulled to avoid pushing changed files with merge conflicts on the main branch
 
 ```console
 > git pull
