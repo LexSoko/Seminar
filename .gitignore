@@ -144,4 +144,4 @@ dmypy.json
 *.synctex.gz
 *.out
 *.xcf
-*main.pdf
+*.pdf
