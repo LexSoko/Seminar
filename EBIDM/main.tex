@@ -32,6 +32,7 @@
     total={170mm,257mm},
     left=20mm,
     top=25mm,
+    bottom = 25mm
    }
 \graphicspath{ {./nudes/} }  %pfad für bilder
 
@@ -96,10 +97,11 @@
 %---------------DOCUMENT TEXT------------------------------------
 \begin{document}
 %\includepdf[]{Deckblatt.pdf} %Insert title page NaWi-Graz
+\input{chapters/0_titelseite.tex}
 \tableofcontents
 \newpage
 
-\input{chapters/0_titelseite.tex}
+
 \input{chapters/1_abstract.tex}
 \input{chapters/2_diagnostik.tex}
 \input{chapters/3_x_ray_therapie.tex}
