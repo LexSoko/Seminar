@@ -9,16 +9,63 @@
 %behandelte krankheiten
 %typische energieskalen
 
-\subsection{Röntgentherapie}
+\subsubsection{Röntgentherapie}
 Die Röntgentherapie hat sich in dem letzten Jahrhundert als einer der wichtigsten medizinischen Instrumente etabliert.
 Vorallem im Bereich der Krebsbehandlung bietet sie ein gezielte und operationfreie Methode um lokal Zellenstrukturen zu verändern.
-Im Laufe einer Krebsbehandlung werden über 50\% \ref{hoskin2019external} der Patienten mit einer Form der Röntgentherapie behandelt.
+Im Laufe einer Krebsbehandlung werden über 50\% der Patienten mit einer Form der Röntgentherapie behandelt.
 Meist wird dies in Kombination mit einer präzisen Diagnostikmethode, wie der im Kapitel \ref{sec:Diagnostik} behandelten Computer Tomographie (CT), sowie
-der Magnetresonanztomographie (MRT) oder Positron Emissions Tomographie (PET) vollzogen.
+der Magnetresonanztomographie (MRT) oder Positron Emissions Tomographie (PET) vollzogen. \cite{hoskin2019external}
+\subsubsection{Strahlungsquellen}
+Die Röntgentherapie, wie der Name schon verrät, wird mit elektromagnetischer Strahlung im Röntgenbereich (>100 eV) gearbeitet. 
+Diese ist Ionisierend und kann Zellstrukturen auf der Molekularebene zerstören.
+Jedoch können die Geräte, die die Strahlung mittels dem Beschleunigen von Elektronen erzeugen, die Elektronen auch als Projektil nutzen.
+Hierbei spricht man von Elektronenstrahlung, welche zwischen 2 und 30 MeV liegt.
+Neue Simulationen zeigen jedoch auch, dass Elektronenstrahlung bis zu 100 MeV eingesetzt werden kann, um tiefschichtigere Tumore gezielt angreifen zu können, ohne umliegende gesunde Zellenstrukturen zu zerstören.
+Dies jedoch kommt mit technischen Schwierigkeiten, da so hohe Energien nur mit 1-5 m langen Beschleunigungsröhren schaffbar ist. \cite{shady_author}
+Die häufigsten Strahlungsquellen in der Medizin sind Linear Beschleuniger.
+Mit diesen kann die Energie der erzeugten Strahlung präzise eingestellt und leichter skaliert werden.
+Andere Strahlungsquellen wie Röntgenröhren sind durch die Limitierung der Röntgenspannung durch technische Faktoren begrenzt einsetztbar.
+Die Energie der erzeugten Photonen für die meisten Anwendungen in der Bestrahlungstherapie liegt bei 4-6 MeV, doch kann diese bei tiefschichtiger Bestrahlung auch bis 25 MeV reichen. \cite{KriegerHannoSfTu}
+
+
+
+
+
+
+
+
+
+%Diese können Elektronen schon auf einer kurzen Distanz auf sehr hohe Geschwingkeiten bringen, was in einer hohen 
+
+
+
 
 
 
 \subsection{Funktionsweise der verwendeten Geräte}
+In der Regel werden in der Medizin Hochfrequenz-Beschleuniger verwendet, bei denen das interne elektrische Feld 
+im Beschleunigungsrohr mit 3 GHz oszilliert. 
+Moderne Elektronenlinearbeschleuniger werden digital gesteuert, sowie in Echtzeit überwacht und können durch ihre relativ kompakte Bauweise
+mit Elektromotoren gedreht sowie Räumlich ausgerichtet werden.
+Der Aufbau kann grundsätzlich in sechs Einheiten unterteilt werden: Energieversorgung, Modulator, Beschleunigungseinheit, Strahlenkopf, Bedienungseinheit und Verifikationsystem. \cite{KriegerHannoSfTu}
+
+\monofig{width=0.6\textwidth}{Krieger_med_linAC_Aufbau.JPG}{gestohlene Abbildung}{fig:gestohlen}
+
+Die Quelle der Hochfrequenzerzeugung, der Modulator, enthält die gesammte Steuerelektronik und ist direkt mit der Energieversorgung und dem Beschleunigungsrohr gekoppelt gekoppelt.
+Diese Einheit kann bei kleineren Systemen direkt auf der Anlage verbaut oder räumlich getrennt sein.
+Die sogenannte Gantry (siehe Abbildung) ist ein drehbare Einheit, in der sich das Vakuumsystem für die Strahlführung und das Beschleunigungsrohr befindet.
+Dabei wird die verbaute Technik von Kühlagregaten gekühlt.
+Es gibt zwei Ausführungen der Beschleunigungeinheit, die grundsätzlich für die medizinische Behandlung nicht von Rolle spielen.
+Man spricht von Wanderwellenbeschleunigern, die Phasefokusierung nutzen um Elektronenbündel mit einer positiven elektromagnetischen Wellenfront zu beschleunigen,
+und Stehwellenbeschleunigern, die die Umpolung einer stehenden elektromagnetischen Welle und feldfreie Räume nutzen, um eine Beschleunigungswirkung zu erzielen.
+Die Elektronen werden nach dem Beschleunigungsrohr im Strahlenkopf durch ein magnetisches Umlenksystem, welches zugleich für die Energieanalyse genutzt wird, auf ein Photonentarget fokusiert.
+Nach der Emission der hochenergetischen Strahlung wird diese durch Blendensysteme,den Kollimatoren, auf ein einstellbares Feld projeziert.
+Da die Strahlung isotrop ausgesendet wird, muss der gesammte Strahlenkopf abgeschirmt sein, dies führt zu einer erheblichen Steigerung der Gantry Masse.
+Trotzdem ist es möglich die gesammte Gantry mit einer hohen Genauigkeit um die Isozetrumachse zu drehen.
+Im Verifkationsystem werden weitgehend selbständig, unter Beobachtung der protokollierten Bestrahlungen, die Bestrahlungsparameter festgelegt.
+
+
+
 %LinAC grobe funktionsweise
 %adaptierung in der medizin
 %häufig verwendete geräte im europäischen raum
